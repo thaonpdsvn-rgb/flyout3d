@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FLYOUT 3D — 3D Arrow Puzzle Game</title>
+<meta name="description" content="FLYOUT 3D: rotate the cube and tap arrows to set them free! A relaxing 3D logic puzzle with 850+ levels and a new daily challenge every day.">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Nunito", sans-serif;
+    background: linear-gradient(180deg, #2A1F7A 0%, #0D0B2E 55%, #03030F 100%);
+    color: #fff; min-height: 100vh;
+    display: flex; flex-direction: column; align-items: center;
+    text-align: center; padding: 48px 20px 32px;
+  }
+  .icon {
+    width: 128px; height: 128px; border-radius: 28px;
+    box-shadow: 0 12px 40px rgba(0,0,0,.5), 0 0 40px rgba(63,232,255,.25);
+  }
+  h1 {
+    font-family: "Fredoka", sans-serif; font-weight: 600;
+    font-size: clamp(44px, 9vw, 72px); letter-spacing: .04em; margin-top: 28px;
+  }
+  .tagline {
+    color: #3FE8FF; font-weight: 700; letter-spacing: .35em;
+    font-size: clamp(13px, 2.5vw, 16px); margin-top: 6px;
+  }
+  .pitch {
+    max-width: 560px; margin-top: 22px; font-size: 18px;
+    line-height: 1.6; color: #C9D1EC;
+  }
+  .badges {
+    margin-top: 30px; display: flex; align-items: center; justify-content: center;
+    gap: 14px; flex-wrap: wrap;
+  }
+  .badge { display: inline-block; }
+  .badge img { height: 72px; }
+  ul.features {
+    list-style: none; margin-top: 34px; display: grid; gap: 10px;
+    font-size: 16px; color: #E7ECFA;
+  }
+  ul.features li::before { content: "◆ "; color: #3FE8FF; }
+  footer {
+    margin-top: auto; padding-top: 48px; font-size: 14px; color: #8891B0;
+  }
+  footer a { color: #9FB4FF; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+  <img class="icon" src="icon.png" alt="FLYOUT 3D icon">
+  <h1>FLYOUT 3D</h1>
+  <div class="tagline">ROTATE · TAP · ESCAPE</div>
+  <p class="pitch">
+    Colorful arrows wrap around every face of a cube — some even bend across
+    the edges. Spin the cube, tap an arrow and it flies off in the direction it
+    points. Blocked arrows bounce back — find the right order and clear every
+    cube!
+  </p>
+  <div class="badges">
+    <a class="badge" href="https://play.google.com/store/apps/details?id=com.boxapp.flyout3d">
+      <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+    </a>
+    <!-- App Store: thêm badge (appstore-badge.svg như bản 2D) khi đã có link apps.apple.com -->
+  </div>
+  <ul class="features">
+    <li>850+ levels on real 3D shapes</li>
+    <li>A new Daily Challenge every day</li>
+    <li>Hint, Eraser &amp; Magic Wand boosters</li>
+    <li>Plays offline · 11 languages</li>
+  </ul>
+  <footer>
+    <a href="privacy-policy.html">Privacy Policy</a> ·
+    <a href="mailto:thaonp.dsvn@gmail.com">Contact</a><br>
+    © 2026 FLYOUT 3D
+  </footer>
+</body>
+</html>
