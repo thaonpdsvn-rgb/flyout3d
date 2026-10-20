@@ -40,6 +40,8 @@
   }
   .badge { display: inline-block; }
   .badge img { height: 72px; }
+  /* Badge App Store không có padding trong ảnh như badge Play -> thu nhỏ lại */
+  .badge.appstore img { height: 48px; }
   ul.features {
     list-style: none; margin-top: 34px; display: grid; gap: 10px;
     font-size: 16px; color: #E7ECFA;
@@ -74,7 +76,9 @@
     <a class="badge" href="https://play.google.com/store/apps/details?id=com.boxapp.flyout3d">
       <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
     </a>
-    <!-- App Store: thêm badge (appstore-badge.svg như bản 2D) khi đã có link apps.apple.com -->
+    <a class="badge appstore" href="https://apps.apple.com/us/app/fly-out-3d-cube-arrow-puzzle/id6817585238">
+      <img src="appstore-badge.svg" alt="Download on the App Store">
+    </a>
   </div>
   <a class="promo-cta" href="remove-ads.html">🎁 Get Remove Ads for Free</a>
   <ul class="features">
